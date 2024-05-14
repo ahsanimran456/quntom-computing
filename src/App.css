@@ -1,0 +1,123 @@
+.left-sidebar-container {
+  background-color: #FFFFFF;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  padding: 20px 30px;
+  overflow-y: hidden;
+  min-width: 300px;
+}
+.left-sidebar-container:hover{
+  overflow-y: scroll;
+}
+h3{
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.menu-item:hover {
+  background-color: #5D5FEF;
+  color: #FFFFFF !important;
+}
+
+
+.menu-item {
+  font-size: 16px;
+  color: #737791;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-bg {
+  width: 30px;
+  height: 30px;
+  background-color: #5D5FEF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.menu-footer {
+  margin-top: 50px;
+
+}
+
+.menu-footer-cover {
+  background-color: #5D5FEF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-size: 24px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-footer-cover span {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+
+/* Change scrollbar width, height, and color */
+.left-sidebar-container::-webkit-scrollbar {
+  width: 5px;
+  /* width of the scrollbar */
+  height: 10px;
+
+}
+
+.left-sidebar-container::-webkit-scrollbar-thumb {
+  background-color: #5D5FEF;
+  /* color of the thumb */
+  height: 2px;
+  border-radius: 10px;
+}
+
+.left-sidebar-container::-webkit-scrollbar-track {
+  background-color: #fff;
+  /* color of the track */
+}
+
+
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: 0;
+  z-index: 1101;
+  backdrop-filter: blur(6px);
+  transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  width: calc(100% - 300px);
+  background-color: #FFFFFF;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 0px 87px 0px;
+  padding: 10px 20px;
+}
+
+.header-container h3 {
+  color: #151D48
+}
