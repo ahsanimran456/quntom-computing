@@ -8,7 +8,7 @@ import { MdDashboard } from "react-icons/md";
 import { FiBarChart2 } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoLogoSlack } from "react-icons/io";
-import { Button } from '@mui/material';
+// import { Button } from '@mui/material';
 const LeftSideBar = () => {
     const data = [
         {
@@ -81,9 +81,9 @@ const LeftSideBar = () => {
                         <span className='mb-4'>
                             features on playstore
                         </span>
-                        <Button variant="contained" color="success" disableElevation style={{ backgroundColor: 'white', color: "#5D5FEF" }}>
+                        {/* <Button variant="contained" color="success" disableElevation style={{ backgroundColor: 'white', color: "#5D5FEF" }}>
                             Download
-                        </Button>
+                        </Button> */}
                     </div>
                 </div>
             </div >
