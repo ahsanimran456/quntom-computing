@@ -8,45 +8,64 @@ import { MdDashboard } from "react-icons/md";
 import { FiBarChart2 } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoLogoSlack } from "react-icons/io";
+import { Link } from 'react-router-dom';
+import { Button } from 'antd';
 // import { Button } from '@mui/material';
 const LeftSideBar = () => {
     const data = [
         {
             name: "Dashboard",
-            icon: <MdDashboard />
-
+            icon: <MdDashboard />,
+            route: "/",
+            active: true
         },
         {
             name: "Leaderboard",
-            icon: <FiBarChart2 />
+            icon: <FiBarChart2 />,
+            route: "/table",
+            active: false
         },
         {
             name: "order",
-            icon: <AiOutlineShoppingCart />
+            icon: <AiOutlineShoppingCart />,
+            route: "/table",
+            active: false
         },
         {
             name: "Products",
-            icon: <IoBagOutline />
+            icon: <IoBagOutline />,
+            route: "/table",
+            active: false
         },
         {
             name: "Sales Report",
-            icon: <BsGraphUp />
+            icon: <BsGraphUp />,
+            route: "/table",
+            active: false
         },
         {
             name: "Messages",
-            icon: <RiMessage2Line />
+            icon: <RiMessage2Line />,
+            route: "/table",
+            active: false
         },
         {
             name: "Messages",
-            icon: <RiMessage2Line />
+            icon: <RiMessage2Line />,
+            route: "/table",
+            active: false
         },
         {
             name: "Settings",
-            icon: <IoSettingsOutline />
+            icon: <IoSettingsOutline />,
+            route: "/table",
+            active: false
         },
         {
             name: "Sign Out",
-            icon: <PiSignOutThin />
+            icon: <PiSignOutThin />,
+            route: "/table",
+            active: false
         },
     ]
     return (
@@ -63,10 +82,12 @@ const LeftSideBar = () => {
                 <div className='menu-container'>
                     {data.map((item, index) => {
                         return (
-                            <div className='menu-item' key={index}>
-                                {item.icon}
-                                <span>{item.name}</span>
-                            </div>
+                            <Link to={item.route} key={index} >
+                                <div className='menu-item' key={index} style={{ background: item.active && "#5D5FEF" ,color: item.active && "#fff" }}>
+                                    {item.icon}
+                                    <span>{item.name}</span>
+                                </div>
+                            </Link>
                         )
                     })}
                 </div>
@@ -81,9 +102,7 @@ const LeftSideBar = () => {
                         <span className='mb-4'>
                             features on playstore
                         </span>
-                        {/* <Button variant="contained" color="success" disableElevation style={{ backgroundColor: 'white', color: "#5D5FEF" }}>
-                            Download
-                        </Button> */}
+                        <Button style={{ color: '#5D5FEF', fontWeight: 600 }}>Download</Button>
                     </div>
                 </div>
             </div >

@@ -3,7 +3,6 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import React from "react";
 import LeftSideBar from "../Components/LeftSideBar";
 import Header from "../Components/Header";
-import { Dashboard } from "@mui/icons-material";
 import DashboardLayout from "../Layouts/DashboardLayout";
 // ----------------------------------------------------------------------
 
